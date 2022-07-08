@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+}
+.fylo-header {
+    display: grid;
+    gap: 2rem;
+    background-color: hsl(228, 56%, 26%);
+    padding: 2rem;
+    padding-right: 8rem;
+    border-radius: 10px 80px 10px 10px;
+}
+
+.fylo-contents {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fylo-contents div {
+    background: hsl(229, 57%, 11%);
+    width: 45px;
+    height: 45px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.gb-left {
+    position: absolute;
+    background-color: hsl(243, 100%, 93%);
+    width: 120px;
+    height: 60px;
+    left: 70%;
+    top: -20%;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    clip-path: polygon(0 0, 100% 0,100% 100%, 90% 80%, 0 80%, 0 0);
+   
+}
+.gb-left h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  
+ 
+}
+.gb-left span {
+    color: hsl(229, 7%, 55%);
+    font-size: 10px;
+    
+}
+.gigabyte {
+    position: relative;
+    background-color: hsl(228, 56%, 26%);
+    padding: 2rem;
+    width: 500px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+ p {
+    color: hsl(229, 7%, 55%);
+}
+p span {
+    color: white;
+    font-weight: bold;
+}
+.slider-container {
+    position: relative;
+    margin: 8px 0;
+}
+.slider {
+    width: 100%;
+    height: 15px;
+    border-radius: 28px;
+    outline: none;
+    background-color: hsl(229, 57%, 11%);
+    -webkit-appearance: none;
+}
+.slider-point {
+    border-radius: 50%;
+    background-color: hsl(243, 100%, 93%);
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 81%;
+    transform: translate(-50%, -60%);
+    padding-right: 10px;
+}
+
+.slider-progress {
+    width: 84%;
+    height: 15px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.gb-amount {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url("./images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;   
+    }
+    
+    .gigabyte {
+        width: 100%;
+    }
+    .gb-left {
+        left: 30%;
+        top: 80%;
+        clip-path: none;
+        border-radius: 8px;
+        width: 150px;
+        padding-top: 5px;
+    }
+}
+
+
+
+
+
+ .attribution { font-size: 12px; text-align: center; color : white;}
+ .attribution a { color: hsl(228, 45%, 44%); }
